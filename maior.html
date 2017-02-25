@@ -31,6 +31,17 @@
                     document.getElementById("n9").value,
                     document.getElementById("n10").value
                 );
+
+                var maiorElem = elementos[0];
+                for(var i = 1; i<=10; i++){                    
+                    if(elementos[i] > maiorElem){
+                        maiorElem = elementos[i];
+                    }
+                }
+
+                var resposta = document.getElementById("resposta");
+                resposta.innerText = "O Maior Elemento é: " + maiorElem;
+
             }
         </script
 
@@ -71,7 +82,7 @@
 
         <input type="button" value="Maior Numero" onclick="maior()"><br>
 
-        <span>O Maior Elemento é: </span>
+        <label id="resposta">O Maior Elemento é: </label>
 
     </body>
 
