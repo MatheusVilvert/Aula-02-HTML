@@ -1,11 +1,40 @@
 <html>
     <head>
 
+        <title>Maior Elemento</title>
+
+         <style>
+            label{                
+                margin-right: 10px            
+            }
+
+            label#n10margem{
+                margin-right: 2px
+            }
+
+            input{
+                margin-bottom: 5px
+            }
+        </style>
+
         <script>
             function maior(){
-                
+                var elementos = new Array(
+                    document.getElementById("n1").value,
+                    document.getElementById("n2").value,
+                    document.getElementById("n3").value,
+                    document.getElementById("n4").value,
+                    document.getElementById("n5").value,
+                    document.getElementById("n6").value,
+                    document.getElementById("n7").value,
+                    document.getElementById("n8").value,
+                    document.getElementById("n9").value,
+                    document.getElementById("n10").value
+                );
             }
         </script
+
+       
 
     </head>
 
@@ -37,10 +66,12 @@
         <label>N9</label>
         <input type="number" id="n9"><br>
 
-        <label>N10</label>
+        <label id="n10margem">N10</label>
         <input type="number" id="n10"><br>
 
-        <input type="button" value="Maior Numero" onclick="maior()">
+        <input type="button" value="Maior Numero" onclick="maior()"><br>
+
+        <span>O Maior Elemento é: </span>
 
     </body>
 
