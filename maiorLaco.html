@@ -42,7 +42,13 @@
 
             function mostra(numero){
                 var valores = document.getElementById("valores");
-                valores.innerText += numero + ",";
+                if(valores.innerText.charAt(0) == ""){
+                    valores.innerText += numero
+                }else{
+                    valores.innerText += ", " + numero ;
+                    
+                }                
+                
             }
         </script
 
@@ -54,9 +60,9 @@
     <label>Elemento</label>
     <input type="text" id="n">
 
-    <input type="button" value="+" onclick="insereElem()"><br>
+    <input type="button" value="+" onclick="insereElem()"><br><br>
 
-    <label id="valores"></label>
+    <label id="valores"></label><br><br>
 
     
 
