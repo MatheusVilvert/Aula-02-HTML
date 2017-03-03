@@ -38,8 +38,9 @@
                 vetor.push(numero);
                 mostra(numero);
                 document.getElementById("n").value = null;
+                
             }
-
+            
             function mostra(numero){
                 var valores = document.getElementById("valores");
                 if(valores.innerText.charAt(0) == ""){
@@ -62,6 +63,7 @@
 
     <input type="button" value="+" onclick="insereElem()"><br><br>
 
+    <label id="valores"></label><br><br>
     <label id="valores"></label><br><br>
 
     
